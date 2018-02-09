@@ -1,0 +1,8 @@
+  <div class="search-results">
+      <input [value]="search"
+        ngxTypeahead
+        [taUrl]="url"
+        [taParams]="params"
+        (taSelected)="handleResultSelected($event)" [taQueryParam]="'q'"
+      >
+    </div>
